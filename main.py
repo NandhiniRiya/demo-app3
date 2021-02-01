@@ -8,7 +8,7 @@ from dash.dependencies import Input, Output, State
 import plotly.express as px
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-df = pd.read_csv(r'C:\Users\HAI\Downloads\Reference_documents.csv')
+df = pd.read_csv("Downloads\Reference_documents.csv")
 LOCATION = df.LOCATION.unique()
 Year = df.Year.unique()
 data_table = dash_table.DataTable(
